@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Title</title>
+  </head>
+  <body>
+    <form action="<%=PATH%>" method="post">
+      <div class="mb-3 row mt-5">
+        <label for="staticEmail" class="col-sm-2 col-form-label"
+          >ID catalog:</label
+        >
+        <div class="col-sm-10">
+          <input type="hidden" name="id" value="<%=PRODUCT.id%>" />
+          <input
+            type="text"
+            class="form-control"
+            id="staticEmail"
+            name="idcatalog"
+            value="<%=PRODUCT.idcatalog%>"
+          />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Name:</label>
+        <div class="col-sm-10">
+          <input
+            type="text"
+            class="form-control"
+            id="inputPassword"
+            name="name"
+            value="<%=PRODUCT.name%>"
+          />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="inputPassword1" class="col-sm-2 col-form-label">img:</label>
+        <div class="col-sm-10">
+          <input
+            type="text"
+            class="form-control"
+            id="inputPassword1"
+            name="img"
+            value="<%=PRODUCT.img%>"
+          />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="inputPassword2" class="col-sm-2 col-form-label">img:</label>
+        <div class="col-sm-10">
+          <input
+            type="text"
+            class="form-control"
+            id="inputPassword2"
+            name="price"
+            value="<%=PRODUCT.price%>"
+          />
+        </div>
+      </div>
+      <input type="submit" value="add" name="btnClick" />
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
